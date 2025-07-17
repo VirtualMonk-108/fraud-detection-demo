@@ -149,7 +149,7 @@ export default function RealTimeDashboard() {
             <div className="max-h-96 overflow-y-auto">
               {transactions.length === 0 ? (
                 <div className="p-6 text-center text-gray-500">
-                  Click "Start Monitoring" to begin tracking transactions
+                  Click &quot;Start Monitoring&quot; to begin tracking transactions
                 </div>
               ) : (
                 transactions.map((transaction) => (

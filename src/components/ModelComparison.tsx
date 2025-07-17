@@ -9,7 +9,7 @@ export default function ModelComparison() {
   const [fraudEngine] = useState(() => new FraudDetectionEngine());
   const [models, setModels] = useState<ModelVersion[]>([]);
   const [activeModelId, setActiveModelId] = useState<string>('');
-  const [performanceData, setPerformanceData] = useState([
+  const [performanceData] = useState([
     { name: 'Week 1', v1_accuracy: 85, v2_accuracy: 92, v3_accuracy: 96, v1_fp: 12, v2_fp: 6, v3_fp: 3 },
     { name: 'Week 2', v1_accuracy: 87, v2_accuracy: 93, v3_accuracy: 97, v1_fp: 11, v2_fp: 5, v3_fp: 2 },
     { name: 'Week 3', v1_accuracy: 84, v2_accuracy: 91, v3_accuracy: 95, v1_fp: 13, v2_fp: 7, v3_fp: 4 },
